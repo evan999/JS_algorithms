@@ -1,12 +1,13 @@
 function sumPrimes(num) {
-  // How to determine a prime number?
+  
+  // Determine if number is prime
   function isPrime(n){
     for(var i = 2; i < n; i++){
       if(n % i == 0){
         return false;
       }
-      return n > 1;
     }
+    return n > 1;        
   }
 
   var sum = 0;

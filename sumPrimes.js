@@ -10,11 +10,13 @@ function sumPrimes(num) {
   }
 
   var sum = 0;
-  for(var i = 0; i <= num; i++){
-    if(isPrime){
-      sum += num[i];
+  for(var i = 2; i <= num; i++){
+    var curNum = i;
+    if(isPrime(curNum)){
+      sum += curNum;
     }
   }
 
   return sum;
+  
 }
